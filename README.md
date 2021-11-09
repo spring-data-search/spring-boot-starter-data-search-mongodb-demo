@@ -5,7 +5,7 @@ This is a demo project for the library [spring-boot-starter-data-search-mongodb]
 ### Requirements
 **Java version** 11 or higher (_If java 8 support is needed, please vote for [this issue](https://github.com/commerce-io/spring-boot-starter-data-search/issues/3)_)
 
-**SpringBoot version** 2.5.0 or higher
+**SpringBoot version** 2.1.0 or higher
 
 ### Usage
 Clone, build and start as any other SpringBoot application.
