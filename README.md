@@ -57,5 +57,5 @@ demo.data-size=10000
 
 By default, with  [data-search](https://github.com/commerce-io/spring-boot-starter-data-search), all customer fields become searchable. 
 ```cURL
-curl -L -X  GET 'http://localhost:9002/customers?search=birthDate >: 1988-01-01 and (emailAddress : /.*gmail.com/ or emailAddress: /.*protonmail.com/)&page=0&size=100&sort=birthDate,desc'
+curl -L -X  GET 'http://localhost:8080/customers?search=birthDate >: 1988-01-01 and (emailAddress : /.*gmail.com/ or emailAddress: /.*protonmail.com/)&page=0&size=100&sort=birthDate,desc'
 ```
