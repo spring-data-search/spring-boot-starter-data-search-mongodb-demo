@@ -2,6 +2,12 @@
 
 This is a demo project for the library [spring-boot-starter-data-search-mongodb](https://github.com/commerce-io/spring-boot-starter-data-search)
 
+### Online Demo
+This demo is deployed on [heroku](https://www.heroku.com/) and sleeps after 30 minutes of inactivity. 
+Your first request could be slow if it occurs when the application is sleeping. In this case, please retry a few seconds after your first request.
+
+[https://data-search-mongodb-demo.herokuapp.com/customers](https://data-search-mongodb-demo.herokuapp.com/customers?search=birthDate%20%3E:%201988-01-01%20and%20(emailAddress%20:%20/.*gmail.com/%20or%20emailAddress:%20/.*outlook.com/)&page=0&size=100&sort=coins,desc)
+
 ### Requirements
 **Java version** 11 or higher (_If java 8 support is needed, please vote for [this issue](https://github.com/commerce-io/spring-boot-starter-data-search/issues/3)_)
 
@@ -57,5 +63,5 @@ demo.data-size=10000
 
 By default, with  [data-search](https://github.com/commerce-io/spring-boot-starter-data-search), all customer fields become searchable. 
 ```cURL
-curl -L -X  GET 'http://localhost:8080/customers?search=birthDate >: 1988-01-01 and (emailAddress : /.*gmail.com/ or emailAddress: /.*protonmail.com/)&page=0&size=100&sort=birthDate,desc'
+curl -L -X  GET 'http://localhost:8080/customers?search=birthDate >: 1988-01-01 and (emailAddress : /.*gmail.com/ or emailAddress: /.*protonmail.com/)&page=0&size=10&sort=coins,desc'
 ```
