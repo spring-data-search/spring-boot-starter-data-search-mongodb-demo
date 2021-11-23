@@ -16,7 +16,7 @@ Your first request could be slow if it occurs when the application is sleeping. 
 ### Usage
 Clone, build and start as any other SpringBoot application.
 
-spring-boot-starter-data-search-mongodb comes with an embedded mongodb and the customers' collection is initialized 
+spring-boot-starter-data-search-mongodb-demo comes with an embedded mongodb and the customers' collection is initialized 
 on startup with 10000 documents. 
 
 If you want to deactivate the data init, or you want more data for your tests, 
